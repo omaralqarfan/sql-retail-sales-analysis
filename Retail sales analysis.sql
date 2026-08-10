@@ -1,21 +1,21 @@
--- SQL Retail Sales Analysis - P1
+-- SQL Retail Sales Analysis 
 CREATE DATABASE sql_project_p2;
 
 -- Creating the table 
 drop table if exists Retail_sales;
 create table Retail_sales 
  		( 
-		transactions_id INT PRIMARY KEY, -- USE THE WORD PRIMARY KEY WORD WHEN DEALING WITH IDS' AND STUFF THAT CAN'T BE DUPLICATED
+		transactions_id INT PRIMARY KEY,
 		sale_date DATE,
 		sale_time TIME,
 		customer_id INT,
 		gender VARCHAR(15),
 		age INT,
-		category VARCHAR(15), -- in excel use max(len(the column's cells)) to know the how many chars you have
+		category VARCHAR(15), 
 		quantity INT,
 		price_per_unit FLOAT,
 		cogs FLOAT,
-		total_sale FLOAT -- USE THE FLOAT DATA TYPE FOR PRICES
+		total_sale FLOAT 
 		)
 
 -- Table
